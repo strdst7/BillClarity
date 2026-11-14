@@ -7,12 +7,13 @@
 [![TypeScript 5](https://img.shields.io/badge/TypeScript-5.9.3-3178c6?logo=typescript&logoColor=white)](telecom-tool-development-challenge/package.json)
 [![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169e1?logo=postgresql&logoColor=white)](telecom-tool-development-challenge/src/db/schema.ts)
 [![Deployment](https://img.shields.io/badge/Deployment-Vercel-black?logo=vercel)](https://billclarity-eosin.vercel.app)
+[![MIT License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 BillClarity helps Malaysian telecom customers review charges and prepare questions for provider support.
 
 **[Production deployment](https://billclarity-eosin.vercel.app)** · **[Report an error](https://github.com/strdst7/BillClarity/issues)**
 
-> **Access:** The Vercel project currently requires SSO. Visitors without access cannot open the production deployment.
+> **Public demo:** Anyone can open the deployment. Audits share one database without user accounts or per-user access controls. Do not enter private bills or personal data.
 
 ## What it does
 
@@ -136,7 +137,7 @@ GitHub pushes trigger deployments when the repository connects to the Vercel pro
 
 ## Data and limitations
 
-- **No user accounts:** The API has no app-level authentication or per-user data isolation. Keep deployment access restricted.
+- **No user accounts:** The public API has no app-level authentication or per-user data isolation. Visitors can read and modify shared audits.
 - **Sensitive data:** Do not paste account numbers, identity numbers, or payment details. Saved audits persist in the configured database.
 - **Synthetic samples:** Sample providers and amounts are fictional. The app inserts missing samples on the first request.
 - **Estimates:** Classification and proration are rule-based guidance. Provider terms determine actual charges, credits, and taxes.
@@ -144,4 +145,4 @@ GitHub pushes trigger deployments when the repository connects to the Vercel pro
 
 ## License
 
-This repository does not currently include a license file. Contact the owner before reusing its code outside this repository.
+This project uses the [MIT License](LICENSE). See `LICENSE` for the full terms.
